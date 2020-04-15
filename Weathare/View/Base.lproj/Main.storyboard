@@ -32,6 +32,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="updateLocationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="io6-uL-ikT"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="GoU-sN-1s2">
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
@@ -47,6 +50,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvJ-qL-qGs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -110,6 +116,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="LxB-Jy-aTK" id="a98-D7-0vS"/>
+                        <outlet property="conditionImageView" destination="frI-Lw-tPC" id="9BJ-uW-hYB"/>
+                        <outlet property="searchTextField" destination="GoU-sN-1s2" id="tnL-RL-1ft"/>
+                        <outlet property="temperatureLabel" destination="qOk-XQ-cCg" id="ZCT-Ib-EIT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

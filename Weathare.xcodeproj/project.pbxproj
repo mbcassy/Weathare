@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5BBC5A92447658D00348A7E /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBC5A82447658D00348A7E /* WeatherManager.swift */; };
+		E5BBC5AB244765FE00348A7E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBC5AA244765FE00348A7E /* WeatherData.swift */; };
+		E5BBC5AD2447662700348A7E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBC5AC2447662700348A7E /* WeatherModel.swift */; };
 		E5DBCE272446714100E48A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBCE262446714100E48A34 /* AppDelegate.swift */; };
 		E5DBCE292446714100E48A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBCE282446714100E48A34 /* SceneDelegate.swift */; };
 		E5DBCE2B2446714100E48A34 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DBCE2A2446714100E48A34 /* WeatherViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5BBC5A82447658D00348A7E /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		E5BBC5AA244765FE00348A7E /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		E5BBC5AC2447662700348A7E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		E5DBCE232446714100E48A34 /* Weathare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DBCE262446714100E48A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5DBCE282446714100E48A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5BBC5AE244766A500348A7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5DBCE2A2446714100E48A34 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5BBC5AF244766B300348A7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5BBC5AC2447662700348A7E /* WeatherModel.swift */,
+				E5BBC5AA244765FE00348A7E /* WeatherData.swift */,
+				E5BBC5A82447658D00348A7E /* WeatherManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5BBC5B0244766BB00348A7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5DBCE2C2446714100E48A34 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5DBCE1A2446714100E48A34 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +90,9 @@
 			children = (
 				E5DBCE262446714100E48A34 /* AppDelegate.swift */,
 				E5DBCE282446714100E48A34 /* SceneDelegate.swift */,
-				E5DBCE2A2446714100E48A34 /* WeatherViewController.swift */,
-				E5DBCE2C2446714100E48A34 /* Main.storyboard */,
+				E5BBC5AF244766B300348A7E /* Model */,
+				E5BBC5B0244766BB00348A7E /* View */,
+				E5BBC5AE244766A500348A7E /* Controller */,
 				E5DBCE2F2446714200E48A34 /* Assets.xcassets */,
 				E5DBCE312446714200E48A34 /* LaunchScreen.storyboard */,
 				E5DBCE342446714200E48A34 /* Info.plist */,
@@ -139,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DBCE2B2446714100E48A34 /* WeatherViewController.swift in Sources */,
+				E5BBC5AB244765FE00348A7E /* WeatherData.swift in Sources */,
 				E5DBCE272446714100E48A34 /* AppDelegate.swift in Sources */,
+				E5BBC5A92447658D00348A7E /* WeatherManager.swift in Sources */,
+				E5BBC5AD2447662700348A7E /* WeatherModel.swift in Sources */,
 				E5DBCE292446714100E48A34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
